@@ -1,3 +1,5 @@
+import { PostsModule } from './posts/posts.module';
+import { CommentsModule } from './comments/comments.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -10,7 +12,9 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    CommentsModule,
+    PostsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

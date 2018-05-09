@@ -1,0 +1,13 @@
+<div class="card">
+  <div class="header">{{header}}</div>
+
+  <div *ngIf="data$ | async as data">
+    <div *ngFor="let item of data">
+      <div class="item">
+        {{item}}
+      </div>
+    </div>
+
+  </div>
+
+</div> 
